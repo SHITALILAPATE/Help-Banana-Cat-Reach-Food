@@ -2,8 +2,6 @@
 
 A fun and interactive food maze game for your banana cat, crafted with love using HTML, CSS, and JavaScript.
 
-![Banana Cat Game](https://shitalilapate.github.io/Help-Banana-Cat-Reach-Food/)
-
 ## Features
 
 - Dynamic character movements and interactions.
