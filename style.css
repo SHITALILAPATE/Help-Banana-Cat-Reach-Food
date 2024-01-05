@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(179, 179, 101);
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-family: 'Poppins', sans-serif;
+    transition: background-color 0.5s ease;
+}
+
+
+#view {
+    margin-top: 30px;
+    transition: margin 0.5s ease;
+}
+
+#mazeContainer {
+    top: 30px;
+    opacity: 0;
+    display: inline-block;
+    margin: auto;
+    border-radius: 10px;
+    background-color: rgb(234, 230, 186); 
+}
+
+#mazeContainer #mazeCanvas {
+    margin: 0;
+    display: block;
+    border: solid 2px #333; 
+    height: 600px;
+}
+
+input, select {
+    cursor: pointer;
+    background-color: rgba(8, 8, 5, 0.3);
+    height: 45px;
+    width: 150px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: rgb(21, 17, 17);
+    display: inline-block;
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+    appearance: none;
+}
+input:hover, select:hover {
+	background-color: rgba(233, 52, 7, 0.7);
+}
+input:active, select:active {
+	background-color: rgb(2, 1, 1);
+}
+input:focus, select:focus {
+	outline: none;
+}
+.custom-select {
+	display: inline-block;
+}
+.custom-select select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-repeat: no-repeat;
+    background-position: 125px center;
+}
+#Message-Container {
+    visibility: hidden;
+    color: white;
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(18, 17, 17, 0.3);
+    z-index: 1;
+}
+#Message-Container #message {
+    width: 300px;
+    height: 300px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -150px;
+    margin-top: -150px;
+}
+#page {
+    text-align: center;
+    height: auto;
+    width: auto;
+    margin: auto;
+    transition: opacity 0.5s ease;
+}
+#page #menu h1 {
+    margin: 0;
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 3.2rem;
+    transition: color 0.5s ease;
+}
+#page #menu h1 {
+    margin: 0;
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 3.2rem;
+}
+#page #view {
+    position: absolute;
+    top: 65px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: auto;
+}
+.border {
+    border: 10px rgb(143, 142, 134) solid;
+    border-radius: 10px;
+}
+
+#view {
+    margin-top: 10px; 
+    transition: margin 0.5s ease;
+}
+
+#instructions {
+    text-decoration: dotted;
+    text-shadow: #0f100b;
+    font-weight: bolder;
+    margin-top: 700px; 
+    font-family: __inter_Fallback_20b187, ui-sans-serif, system-ui, -apple-system, "system-ui", "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+ 
+@media only screen and (max-width: 600px) {
+    #mazeContainer {
+        top: 10px; 
+        border-radius: 5px; 
+    }
+
+    #mazeContainer #mazeCanvas {
+        border-width: 1px; 
+        height: 300px; 
+    }
+
+    #instructions {
+        margin-top: 10px;
+        font-size: 14px; 
+    }
+
+    #timer {
+        font-size: 14px; 
+    }
+
+    #diffSelect,
+    #startMazeBtn {
+        width: 100%;
+        margin-bottom: 10px; 
+    }
+}
+#introMessage-Container {
+    visibility: visible;
+    color: #3498db; 
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 2;
+}
+
+#introMessage {
+    width: 300px;
+    height: 200px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -150px;
+    margin-top: -100px;
+    text-align: center;
+}
+
+#introMessage h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #a72c1f; 
+    font-family: 'Arial', sans-serif; 
+}
+
+#introMessage p {
+    margin: 0;
+    color: #0f100b; 
+    font-family: __inter_Fallback_20b187, ui-sans-serif, system-ui, -apple-system, "system-ui", "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+#introMessage #startMazeBtn {
+    cursor: pointer;
+    background-color: rgba(186, 148, 22, 0.7);
+    height: 45px;
+    width: 150px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+    appearance: none;
+    margin-top: 20px;
+    font-family: 'Arial', sans-serif; 
+}
+
+#introMessage #startMazeBtn:hover {
+    background-color: rgba(41, 2, 3, 0.9);
+}
+
+#introMessage #startMazeBtn:active {
+    background-color: rgb(228, 237, 237);
+}
+
+#introMessage #startMazeBtn:focus {
+    outline: none;
+}
